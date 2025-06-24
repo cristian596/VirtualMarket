@@ -1,0 +1,44 @@
+<div class="registro">
+    <div class="box_registro">
+        <h3>Crea una Cuenta</h3>
+        <p class="p">Es rápido y fácil</p>
+        <div class="linea_separada"></div>
+        <form class="form_registro">
+            <mat-form-field class="input">
+                <input type="text" matInput placeholder="Nombre" required="">
+            </mat-form-field>
+            <mat-form-field  class="input">
+                <input type="text" matInput placeholder="Apellido" required="">
+            </mat-form-field><br>
+            <label for="fecha_nacimiento">Fecha de Nacimiento: </label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="calendario"><br><br>
+            <label for="Genero">Género: </label>
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Masculino</mat-radio-button>
+                <mat-radio-button value="2">Femenino</mat-radio-button>
+                <mat-radio-button value="3">Neutro</mat-radio-button>
+            </mat-radio-group><br>
+            <mat-form-field class="input">
+                <input type="email" matInput placeholder="Correo Electronico" required="">
+            </mat-form-field><br>
+            <mat-form-field  class="input">
+                <input type="password" matInput placeholder="Contraseña" minlength="8">
+            </mat-form-field><br>
+            <mat-form-field  class="input">
+                <input type="tel" matInput placeholder="Telefono" #telefono minlength="10" maxlength="10">
+                <mat-hint align="end">{{telefono.value.length}} / 10</mat-hint>
+            </mat-form-field><br>
+            <p class="enunciado">Al hacer clic en Registrarse, aceptas las Condiciones, la Política de privacidad y la Política de cookies. Es posible que te enviemos notificaciones por SMS, que podrás desactivar cuando quieras</p>
+            <p><mat-checkbox checked="" required="" class="checkbox">¿Entiendes las condiciones al dar Registrase?</mat-checkbox></p>
+            <button matButton="filled">Registrarse</button>
+            <a href="">
+                <h5>Ya tienes una cuenta?</h5>
+            </a>
+        </form>
+    </div>
+</div>
+<div>
+    <footer class="footer_registro">
+        <p>&copy;Del campo a casa 2025</p>
+    </footer>
+</div>

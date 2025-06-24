@@ -1,0 +1,149 @@
+.principal{
+    display: block;
+}
+/*Estilos Banner*/
+.banner img{
+    width: 98%;
+    height: 400px;
+    padding: 10px;
+}
+/*Estilos para la seecion principal*/
+
+.button-secciones button{
+    margin-left: 5px;
+    border: none;
+    background-color: #ED3500;
+    font-family: sans-serif;
+    color: #1b2631;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 5px;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    &:active{
+        transform: scale(0.98);
+        opacity: 70%;
+        background-color: #B6F500;
+        color: white;
+    }
+}
+
+.button-secciones .frutas{
+    margin-left: 5px;
+    border: none;
+    background-color: #B6F500;
+    font-family: sans-serif;
+    color: #1b2631;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 5px;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    &:active{
+        transform: scale(0.98);
+        opacity: 70%;
+        background-color:  #ED3500;
+        color: white;
+    }   
+}
+
+/*Estilos para la seccion de verduras */
+.seccion-verduras{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(190px, 1fr));
+    padding: 20px;
+    gap: 20px 15px;  
+    margin-bottom: 20px;  
+    align-items: stretch;
+}
+
+.seccion-verduras .box-card{
+    padding: 10px;
+    width: 150px;
+    height: 350px;
+    border: 1px solid #999;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.seccion-verduras .box-card .card-verduras {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5px;
+    height: 100%;
+}
+
+
+.seccion-verduras .box-card .card-verduras p{
+    margin-top: -10px;
+    font-family: Arial, sans-serif;
+}
+
+.seccion-verduras .box-card .card-verduras .tittle{
+   font-size: 13px;
+}
+
+.seccion-verduras .box-card .card-verduras .precio-und{
+    font-size: 12px;
+    color: grey;
+}
+
+.seccion-verduras .box-card .card-verduras .precio-descuento{
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.seccion-verduras .box-card .card-verduras .descuento{
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 3px 5px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.seccion-verduras .box-card .card-verduras .precio-original{
+    color: #999;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.seccion-verduras .box-card .card-verduras img{
+    width: 145px;
+    height: 150px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+.seccion-verduras .box-card .card-verduras button{
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    height: 35px;
+    font-size: 17px;
+    margin-right: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.seccion-verduras .box-card .card-verduras button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.seccion-verduras .box-card .card-verduras button:active{
+    transform: scale(0.98);
+    opacity: 90%;
+}
